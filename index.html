@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/deea3db5fa.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+          <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+            <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+              <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skills</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Timeline</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="p-4 w-full text-center bg-white rounded-lg border shadow-md sm:p-10 dark:bg-gray-800 dark:border-gray-700">
+        <div class="flex flex-col items-center pb-10">
+            <img class="mb-3 w-24 h-24 rounded-full shadow-lg" src="/static/images/profile.jpg"/>
+            <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Vasco Regal</h5>
+            <span class="text-sm text-gray-500 dark:text-gray-400">Software Engineer</span>
+            <div class="flex mt-4 space-x-3 lg:mt-6">
+                <a href="https://github.com/VascoRegal" class="inline-flex text-2xl items-center py-2 px-4 font-big text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="p-4 w-full bg-blue-700 rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+        <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">About</h5>
+        <p class="mb-5 text-base text-white sm:text-lg dark:text-gray-400">
+            My name is Vasco Jorge Regal Sousa, I'm currently on my last year in <b>Informatic Engineering</b> (a mix of Computer Science and Software Engineering)
+            at <b>University of Aveiro</b>.
+        </p>
+        <p class="mb-5 text-base text-white sm:text-lg dark:text-gray-400">
+            Ever since I was a kid I found it fascinating how computers worked so I developed a small interest in programming and computer science even before entering university.
+            In fact, after studying deeply various aspects that support our modern, digital world, this passion only grew stronger, especially when I realized how easy it was
+            to transpose many of my ideas with real projects.
+        </p>
+        <p class="mb-5 text-base text-white sm:text-lg dark:text-gray-400">
+            One of my qualities I'm most proud of is my motivation and dedication to learn new topics, be it frameworks, languages or even completly different areas, trying
+            my best to leave my comfort bubble and challenge myself to have a more broad toolkit and set of skills.
+        </p>
+        <p class="mb-5 text-base text-white sm:text-lg dark:text-gray-400">
+            Although I can do a bit of everything, working as a <b>Backend Dev</b> or messing around with <b>DevOps</b> activities to be the most fun and probably where I'm more skilled at.
+        </p>
+        <p class="mb-5 text-base text-white sm:text-lg dark:text-gray-400">
+            Outsied of the tech world, my hobbies span around multiple arts, from cinema to painting. I'm a (self-proclaimed) music nerd and a huge Twin Peaks fan.
+        </p>
+    </div>
+    
+    <div class="p-4 w-full bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+        <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Skills</h5>  
+        <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+
+            <div class="rounded overflow-hidden shadow-lg">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Languages</div>
+                <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+                    <img class="w-full" src="static/logos/python.png">
+                    <img class="w-full" src="static/logos/java.png">
+                    <img class="w-full" src="static/logos/kotlin.png">
+                    <img class="w-full" src="static/logos/c.png">
+                    <img class="w-full" src="static/logos/cpp.png">
+                    <img class="w-full" src="static/logos/csh.png">
+                    <img class="w-full" src="static/logos/js.png">
+                    <img class="w-full" src="static/logos/ts.png">
+                    <img class="w-full" src="static/logos/matlab.png">
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded overflow-hidden shadow-lg">
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">Backend</div>
+                  <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+                      <img class="w-full" src="static/logos/node.png">
+                      <img class="w-full" src="static/logos/spring.png">
+                      <img class="w-full" src="static/logos/flask.png">
+                      <img class="w-full" src="static/logos/django.png">
+                  </div>
+                </div>
+              </div>
+        
+            <div class="rounded overflow-hidden shadow-lg">
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">Frontend</div>
+                  <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+                      <img class="w-full" src="static/logos/angular.png">
+                      <img class="w-full" src="static/logos/html.png">
+                      <img class="w-full" src="static/logos/css.png">
+                      <img class="w-full" src="static/logos/jquery.png">
+                      <img class="w-full" src="static/logos/bootstrap.svg">
+                      <img class="w-full" src="static/logos/tailwind.png">
+                  </div>
+                </div>
+              </div>
+
+            <div class="rounded overflow-hidden shadow-lg">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">SQL</div>
+                    <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+                        <img class="w-full" src="static/logos/mysql.png">
+                        <img class="w-full" src="static/logos/psql.png">
+                        <img class="w-full" src="static/logos/sqlserver.png">
+                    </div>
+                </div>
+            </div>
+            <div class="rounded overflow-hidden shadow-lg">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">NoSQL</div>
+                    <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+                        <img class="w-full" src="static/logos/mongo.png">
+                        <img class="w-full" src="static/logos/redis.svg">
+                        <img class="w-full" src="static/logos/cassandra.png">
+                        <img class="w-full" src="static/logos/neo4j.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="rounded overflow-hidden shadow-lg">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Other</div>
+                    <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+                        <img class="w-full" src="static/logos/docker.png">
+                        <img class="w-full" src="static/logos/bash.png">
+                        <img class="w-full" src="static/logos/git.png">
+                        <img class="w-full" src="static/logos/gns.png">
+                        <img class="w-full" src="static/logos/jupyter.png">
+                        <img class="w-full" src="static/logos/postman.svg">
+                        <img class="w-full" src="static/logos/rmq.png">
+                        <img class="w-full" src="static/logos/rpi.png">
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+
+    <div class="p-4 w-full bg-blue-700  rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+        <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Timeline</h5>
+        <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+            <div>
+                <h3 class="mb-2 text-2xl font-bold text-white dark:text-gray">Education</h3>
+                <ol class="relative border-l border-gray-200 dark:border-gray-700">                  
+                    <li class="mb-10 ml-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">09/19 - Now (est. 06/22)</time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Informatic Engineering student.</h3>
+                        <p class="mb-4 text-base font-normal text-white dark:text-gray-400">University of Aveiro</p>
+                    </li>
+                    <li class="mb-10 ml-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">09/16 - 07/19</time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Science and Technology</h3>
+                        <p class="text-base font-normal text-white dark:text-gray-400">Coelho e Castro High School</p>
+                    </li>
+                </ol>
+            </div>            <div>
+                <h3 class="mb-2 text-2xl font-bold text-white dark:text-gray">Experience</h3>
+                <ol class="relative border-l border-gray-200 dark:border-gray-700">                  
+                    <li class="mb-10 ml-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">09/19 - Now (est. 06/22)</time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Informatic Engineering student.</h3>
+                        <p class="mb-4 text-base font-normal text-white dark:text-gray-400">University of Aveiro</p>
+                    </li>
+                    <li class="mb-10 ml-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">09/16 - 07/19</time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Science and Technology</h3>
+                        <p class="text-base font-normal text-white dark:text-gray-400">Coelho e Castro High School</p>
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <h3 class="mb-2 text-2xl font-bold text-white dark:text-gray">Education</h3>
+                <ol class="relative border-l border-gray-200 dark:border-gray-700">                  
+                    <li class="mb-10 ml-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">09/19 - Now (est. 06/22)</time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Informatic Engineering student.</h3>
+                        <p class="mb-4 text-base font-normal text-white dark:text-gray-400">University of Aveiro</p>
+                    </li>
+                    <li class="mb-10 ml-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">09/16 - 07/19</time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Science and Technology</h3>
+                        <p class="text-base font-normal text-white dark:text-gray-400">Coelho e Castro High School</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
